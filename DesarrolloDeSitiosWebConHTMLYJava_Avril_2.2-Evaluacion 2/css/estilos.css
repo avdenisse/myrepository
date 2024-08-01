@@ -1,0 +1,14 @@
+#commentarea{
+ width: 200px;
+}
+body{
+    margin: 20px;
+    font-family: Verdana;
+}
+input[name="email"]{
+    background:#eeeeee
+  
+}
+p, label{
+    font-family: Tahoma;
+}
