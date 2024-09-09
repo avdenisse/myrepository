@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #6b8e23;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+section {
+    padding: 100px 20px;
+    margin: 60px 20px; /* da espacio  */
+    background-color: white;
+    border-radius: 5px;
+}
+
+.active-section {
+    display: block;
+}
+
+.hidden-section {
+    display: none;
+}
+
+h1{
+    text-align: right;
+}
+ h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+}
+.product-grid img{
+    width: 100px;
+    height: 100px;
+}
+
+.product-card {
+    background-color: #dcdcdc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6b8e23;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+#inicio .acercacont{
+    display: flex;
+}
+
+#inicio img {
+    width:492px;
+    height:366px;
+    padding-left: 50px;
+
+}
+#inicio p{
+    font-size:24px ;
+    translate: 630px -300px
+}
+
+#inicio h1{
+    padding-right:300px;
+}
+
+#acerca .cont {
+    display: flex;
+    align-items: flex-start; /* Aligns the image and paragraph at the top */
+    gap: 20px; /* Space between image and paragraph */
+}
+
+#acerca img {
+    max-width: 40%; /* Adjust width for the image */
+    height: auto; /* Maintains aspect ratio */
+}
+
+#acerca p {
+    font-size: 24px;
+    max-width: 60%; /* Limits the paragraph width to fit next to the image */
+    text-align: justify; /* Justifies the text */
+    line-height: 1.6; /* Improves readability */
+    overflow-wrap: break-word;
+}
+
+/* Telefonos */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
